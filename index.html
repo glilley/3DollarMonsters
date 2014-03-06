@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3 Dollar Monster | Handcrafted Monsters Mailed to You</title>
+	<meta name="description" content="Handcrafted monsters...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+</head>
+<body>
+	<header class="main">
+		<div class="container">
+			<h1 class="logo bigEntrance">3 Dollar Monsters</h1>
+		</div>
+	</header>
+	<section class="how-it-works">
+		<div class="container">
+			<ul class="steps">
+				<li><h3>Pick A Color</h3><img class="animated hatch" src="images/tdm_color.svg" alt=""><p>Don’t be scared, they come in any color. Goblin Booger? Sure.</p><div class="icon"></div></li>
+				<div>+</div>
+				<li><h3>Pay 3 Dollars</h3><img class="hatch" src="images/tdm_money.svg" alt=""><p>We use Paypal. It’s safe, secure and accepts all the big name plastic.</p><div class="icon"></div></li>
+				<div>=</div>
+				<li><h3>Get A Monster</h3><img class="hatch" src="images/tdm_monster.svg" alt=""><p>A<a href="#modal-example"> hand-painted postcard</a> of your custom-colored creature.</p><div class="icon"></div></li>
+			</ul>
+		</div>
+	</section>
+<!-- Modal Start -->
+	<section id="modal-example" class="semantic-content" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<div class="modal-inner">
+					<header>
+						<h2 id="modal-label">Example Postcard</h2>
+					</header>
+					<div class="modal-content list">
+						<img src="images/example.jpg" alt="Example of 3 Dollar Monster Postcard">
+						<p>Watercolor &amp; pen on postcard</p>
+					</div>
+				</div>
+				<a href="#!" class="modal-close" title="Click to close this modal" data-dismiss="modal">&times;</a>
+	</section>
+<!-- modal end -->
+	<section class="payment" id="animate">
+		<div role="img" class="nessy-1 animatedElement up" alt="background graphic animation"></div>
+
+		<div class="container">
+			<div class="peek animatedElement"></div>
+			<h2>Pick A Color</h2>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<table>
+				<tr><td><input type="hidden"  name="on0" value="Color" ></td></tr><tr><td><input class="color"type="text" placeholder="Ex: Blueberry Nessy" name="os0" maxlength="40"></td></tr>
+				</table>
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+				<input class="button" type="submit"  src="" border="0" name="submit" value="Send My Monster">
+			</form>
+			<span class="shipping">Your monster will ship in a few days.</span>
+
+		</div>
+		<div class="nessy">
+<!-- 				<img src="images/nessy.svg" alt="Blueberry Nessy - A $3 Monsters Example">
+ -->			</div>
+	
+	</section>
+	<section class="map">
+		<div class="container-map">
+			
+						<h2>Recently Adopted</h2>
+						<div class="monster-left wow animated bounceInLeft animatedElement left"></div>
+						<div class="road"></div>
+						<div class="monster-right animatedElement right"></div>
+						
+						<iframe width='100%' height='500px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mizzmeister.h0an0mfi/mm/zoompan.html'></iframe>
+		</div>
+	</section>
+	<footer>
+		<div class="container-footer">
+			<ul>
+				<a class="wow animated bounceInLeft" href="http://www.twitter.com/3dollarmonsters" alt="Follow us on Twitter for updates and to ask questions"><li>Twitter</li></a>
+				<a href="http://www.instagram.com/3dollarmonsters" alt"Share your Monster on Instagram"><li>Instagram</li></a>
+			</ul>
+			<p>A project by <a href="http://www.mizzmeister.com">Milo Mitchell</a> &amp; <a href="http://www.gregllly.com">Greg Lilley</a> &nbsp;&nbsp;<a href="#">FAQ</a></p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/modal-ck.js"></script>
+	<script>
+	$(window).scroll(function() {
+		$('.animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+			if ((imagePos < topOfWindow+600) && $(this).hasClass('left')) {
+				$(this).addClass("slideRight")
+			}
+			else if ((imagePos < topOfWindow+550) && $(this).hasClass('right')) {
+				$(this).addClass("slideLeft");
+			}
+			else if ((imagePos < topOfWindow+400) && $(this).hasClass('up')) {
+				$(this).addClass("slideUp");
+			}
+		});
+		$('.animatedElement').each(function(){
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if ((imagePos < topOfWindow+400) && $(this).hasClass('peek')) {
+				$(this).addClass("little-monster");
+			}
+
+			});
+			
+	});
+</script>
+	
+</body>
+</html>
+
