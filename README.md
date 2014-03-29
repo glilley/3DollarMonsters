@@ -1,3 +1,3 @@
 #3 Dollar Monsters
-Pay $3, get a custom monster postcard.
+Where monsters run wild.
 www.3dollarmonsters.com
