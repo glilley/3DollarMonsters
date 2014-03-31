@@ -451,6 +451,24 @@ h1.logo {
 			height: 9em;
 		}
 	}
+	div.icons {	
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: 4.9em;
+		background: $green url(../images/tdm_icons.svg) no-repeat;
+		background-size: 4.8em;
+		margin-bottom: .4em;
+	}
+	div.icon-color {
+		background-position: center top;
+	}
+	div.icon-money {
+		background-position: center -4.95em;
+	}
+	div.icon-postcard {
+		background-position: center -9.95em;
+	}
 	a {
 		font-weight: 700;
 		&:hover {

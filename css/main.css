@@ -393,14 +393,14 @@ table {
 body {
   color: #777; }
 
-/* line 14, ../scss/_typography.scss */
-h1, h2, h3, .message p, footer p, footer li {
-  font-family: 'Whynot'; }
-
-/* line 15, ../scss/_typography.scss */
+/* line 12, ../scss/_typography.scss */
 .semantic-content .modal-content p, .steps p, form {
-  font-family: 'Whynot';
+  font-family: 'Dosis', sans-serif;
   font-weight: 400; }
+
+/* line 13, ../scss/_typography.scss */
+h1, h2, h3, .message p, footer p, footer li {
+  font-family: 'neoretrofillregular', sans-serif; }
 
 /* line 17, ../scss/_typography.scss */
 h1 {
@@ -2116,16 +2116,34 @@ h1.logo {
         width: 9em;
         height: 9em; } }
   /* line 454, ../scss/main.scss */
+  .steps div.icons {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 4.9em;
+    background: #71bf9c url(../images/tdm_icons.svg) no-repeat;
+    background-size: 4.8em;
+    margin-bottom: .4em; }
+  /* line 463, ../scss/main.scss */
+  .steps div.icon-color {
+    background-position: center top; }
+  /* line 466, ../scss/main.scss */
+  .steps div.icon-money {
+    background-position: center -4.95em; }
+  /* line 469, ../scss/main.scss */
+  .steps div.icon-postcard {
+    background-position: center -9.95em; }
+  /* line 472, ../scss/main.scss */
   .steps a {
     font-weight: 700; }
-    /* line 456, ../scss/main.scss */
+    /* line 474, ../scss/main.scss */
     .steps a:hover {
       color: #fff; }
-    /* line 459, ../scss/main.scss */
+    /* line 477, ../scss/main.scss */
     .steps a:active {
       color: #F7A389; }
 
-/* line 465, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 form {
   position: relative;
   z-index: 10;
@@ -2135,7 +2153,7 @@ form {
   display: block;
   text-align: center; }
 
-/* line 475, ../scss/main.scss */
+/* line 493, ../scss/main.scss */
 .shipping {
   color: #fff;
   display: block;
@@ -2143,11 +2161,11 @@ form {
   position: relative;
   top: -2.5em; }
 
-/* line 482, ../scss/main.scss */
+/* line 500, ../scss/main.scss */
 table {
   margin: 1em auto; }
 
-/* line 486, ../scss/main.scss */
+/* line 504, ../scss/main.scss */
 input {
   margin: .2em;
   -moz-border-radius: 0.2em;
@@ -2155,7 +2173,7 @@ input {
   border-radius: 0.2em;
   padding: .5em; }
 
-/* line 491, ../scss/main.scss */
+/* line 509, ../scss/main.scss */
 .color {
   border: .1em solid #fff;
   background-color: #fff;
@@ -2163,11 +2181,11 @@ input {
   text-align: center;
   color: #777;
   transition: border .8s; }
-  /* line 498, ../scss/main.scss */
+  /* line 516, ../scss/main.scss */
   .color:hover {
     border: 0.1em solid #7ad0ad; }
 
-/* line 500, ../scss/main.scss */
+/* line 518, ../scss/main.scss */
 .button {
   color: #fff;
   background-color: #4979bf;
@@ -2178,27 +2196,27 @@ input {
   font-weight: 500;
   transition: background-color .5s; }
 
-/* line 510, ../scss/main.scss */
+/* line 528, ../scss/main.scss */
 .button:hover {
   background-color: #3e66a2; }
 
-/* line 513, ../scss/main.scss */
+/* line 531, ../scss/main.scss */
 .button:active {
   border-color: #4572b5;
   background-color: #4572b5; }
 
-/* line 517, ../scss/main.scss */
+/* line 535, ../scss/main.scss */
 .button:focus {
   outline: none; }
 
-/* line 519, ../scss/main.scss */
+/* line 537, ../scss/main.scss */
 .nessy {
   height: 9em;
   background-color: #90CBCE;
   position: relative;
   z-index: -1; }
 
-/* line 525, ../scss/main.scss */
+/* line 543, ../scss/main.scss */
 iframe {
   position: relative;
   z-index: 20;
@@ -2207,15 +2225,15 @@ iframe {
   padding-bottom: 3em;
   width: 100%; }
   @media (min-width: 46.875em) {
-    /* line 525, ../scss/main.scss */
+    /* line 543, ../scss/main.scss */
     iframe {
       width: 45em; } }
 
-/* line 536, ../scss/main.scss */
+/* line 554, ../scss/main.scss */
 .hands {
   display: none; }
   @media (min-width: 40em) {
-    /* line 536, ../scss/main.scss */
+    /* line 554, ../scss/main.scss */
     .hands {
       background: transparent url(../images/hands.svg) center 0 no-repeat;
       position: absolute;
@@ -2226,17 +2244,17 @@ iframe {
       width: 6.9375em;
       height: 3.5em; } }
 
-/* line 550, ../scss/main.scss */
+/* line 568, ../scss/main.scss */
 .left-hand {
   background-position: 0 0;
   left: 0; }
 
-/* line 554, ../scss/main.scss */
+/* line 572, ../scss/main.scss */
 .right-hand {
   background-position: 0 -3.5em;
   right: 0; }
 
-/* line 558, ../scss/main.scss */
+/* line 576, ../scss/main.scss */
 .cyclops {
   position: absolute;
   margin: 0 auto;
@@ -2249,7 +2267,7 @@ iframe {
   z-index: -11;
   display: none; }
 
-/* line 570, ../scss/main.scss */
+/* line 588, ../scss/main.scss */
 footer {
   height: 22.04em;
   width: 100%;
@@ -2258,7 +2276,7 @@ footer {
   z-index: -1000;
   background: #71bf9c url(../images/floating-monsters.gif) center 0.8em no-repeat;
   overflow: hidden; }
-  /* line 578, ../scss/main.scss */
+  /* line 596, ../scss/main.scss */
   footer p {
     color: #71bf9c;
     background-color: #3c6d57;
@@ -2274,16 +2292,16 @@ footer {
     margin: 0;
     width: 100%;
     z-index: -10; }
-  /* line 596, ../scss/main.scss */
+  /* line 614, ../scss/main.scss */
   footer a {
     font-size: 1.1em; }
-    /* line 598, ../scss/main.scss */
+    /* line 616, ../scss/main.scss */
     footer a:hover {
       color: #fff; }
-    /* line 601, ../scss/main.scss */
+    /* line 619, ../scss/main.scss */
     footer a:active {
       color: #4e8e71; }
-  /* line 605, ../scss/main.scss */
+  /* line 623, ../scss/main.scss */
   footer .container-footer {
     display: block;
     text-align: center;
@@ -2291,19 +2309,19 @@ footer {
     margin: 0 auto;
     width: 100%; }
     @media (min-width: 46.875em) {
-      /* line 605, ../scss/main.scss */
+      /* line 623, ../scss/main.scss */
       footer .container-footer {
         width: 44em; } }
-  /* line 615, ../scss/main.scss */
+  /* line 633, ../scss/main.scss */
   footer ul {
     padding: 2.2em 0 0 0;
     display: block;
     margin: 0 auto; }
     @media (min-width: 46.875em) {
-      /* line 615, ../scss/main.scss */
+      /* line 633, ../scss/main.scss */
       footer ul {
         padding: 4em 0 0 0; } }
-  /* line 623, ../scss/main.scss */
+  /* line 641, ../scss/main.scss */
   footer li {
     padding: .25em;
     font-size: 1.8em;
@@ -2311,25 +2329,25 @@ footer {
     font-weight: 400;
     transition: color .5s; }
     @media (min-width: 46.875em) {
-      /* line 623, ../scss/main.scss */
+      /* line 641, ../scss/main.scss */
       footer li {
         display: inline-block;
         padding: 1em; } }
-    /* line 633, ../scss/main.scss */
+    /* line 651, ../scss/main.scss */
     footer li:hover {
       color: #fff; }
-    /* line 636, ../scss/main.scss */
+    /* line 654, ../scss/main.scss */
     footer li:active {
       color: #4e8e71; }
 
-/* line 642, ../scss/main.scss */
+/* line 660, ../scss/main.scss */
 .sticky {
   background: transparent url(../images/map-bottom.svg) repeat-x;
   height: 1.1em;
   margin-bottom: 21em;
   overflow: hidden; }
 
-/* line 648, ../scss/main.scss */
+/* line 666, ../scss/main.scss */
 #map {
   position: absolute;
   margin: 0 auto;
@@ -2341,12 +2359,12 @@ footer {
   z-index: 20;
   border: none; }
   @media (min-width: 40em) {
-    /* line 648, ../scss/main.scss */
+    /* line 666, ../scss/main.scss */
     #map {
       top: 20em;
       bottom: 6em; } }
   @media (min-width: 46.875em) {
-    /* line 648, ../scss/main.scss */
+    /* line 666, ../scss/main.scss */
     #map {
       top: 14em;
       max-width: 60em;
@@ -2355,7 +2373,7 @@ footer {
       -webkit-border-radius: 1em;
       border-radius: 1em; } }
 
-/* line 673, ../scss/main.scss */
+/* line 691, ../scss/main.scss */
 .leaflet-left .leaflet-control {
   -webkit-border-radius: 1.25em;
   border-radius: 1.25em;
@@ -2364,29 +2382,29 @@ footer {
   opacity: 0.7;
   margin-left: 1.875em !important; }
   @media (min-width: 30em) {
-    /* line 673, ../scss/main.scss */
+    /* line 691, ../scss/main.scss */
     .leaflet-left .leaflet-control {
       margin-left: 1.75em !important;
       margin-top: 1.875em !important; } }
 
-/* line 687, ../scss/main.scss */
+/* line 705, ../scss/main.scss */
 .leaflet-bar a:active, .leaflet-bar a:hover {
   background-color: initial !important; }
 
-/* line 692, ../scss/main.scss */
+/* line 710, ../scss/main.scss */
 .popup h2 {
   font-size: 2em !important;
   padding-top: .5em !important;
   color: #71bf9c !important; }
-/* line 697, ../scss/main.scss */
+/* line 715, ../scss/main.scss */
 .popup img {
   max-width: 20em !important; }
 
-/* line 701, ../scss/main.scss */
+/* line 719, ../scss/main.scss */
 .leaflet-popup-content {
   width: auto !important; }
 
-/* line 704, ../scss/main.scss */
+/* line 722, ../scss/main.scss */
 .leaflet-popup-content-wrapper {
   -moz-border-radius: 1em !important;
   -webkit-border-radius: 1em !important;

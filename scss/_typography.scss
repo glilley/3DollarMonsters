@@ -9,10 +9,10 @@ $orange: #F7A389;
 
 body {color: #777;}
 
-// %body-font {font-family: 'Dosis', sans-serif; font-weight: 400;}  //@extend %body-font
-// %title-font{font-family: 'neoretrofillregular', sans-serif;}
-%title-font{font-family: 'Whynot';}
-%body-font {font-family: 'Whynot'; font-weight: 400;}
+%body-font {font-family: 'Dosis', sans-serif; font-weight: 400;}  //@extend %body-font
+%title-font{font-family: 'neoretrofillregular', sans-serif;}
+// %title-font{font-family: 'Whynot';}
+// %body-font {font-family: 'Whynot'; font-weight: 400;}
 
 h1{font-size: 3.8em; font-weight: normal;@extend %title-font;}
 h2{font-size: 2em; font-weight: normal;@extend %title-font;}
