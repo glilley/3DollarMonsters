@@ -1,0 +1,52 @@
+// html {
+// 	background-color: $green;
+// }
+.error-page{
+	background-color: $green;
+	padding-top: 2em;
+	img {
+		float: left;
+		width: 20em;
+	}
+}
+.message {
+	background: transparent url(../images/404-monster.svg) 57% 0 no-repeat;
+	text-align: center;
+	h1 {
+		// text-align: center;
+		margin: .05em auto;
+		padding: 0;
+		font-size: 7em;
+		@include breakpoint (baby-bear) {
+			font-size: 10em;
+		}
+		
+		@include breakpoint (mama-bear) {
+			font-size: 15em;
+		}
+	}
+	p {
+		color: $darkGreen;
+		@extend %title-font;
+		margin: .1em 0;
+		font-size: 1.8em;
+		@include breakpoint(baby-bear){
+			font-size: 2em;
+		}
+		@include breakpoint(mama-bear){
+			font-size: 2.5em;
+		}
+  }
+	a p {
+		font-size: 1.2em;
+		font-weight: 700;
+		color: #fff;
+		padding-top: 1em;
+		&:hover {
+			color: $darkGreen;
+		}
+		&:active {
+			color: $orange;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>404 Page Cannot Be Found</title>
+	<meta name="description" content="Uh oh, your page cannot be found or does not exist">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="http://www.mizzmeister.com/3DollarMonster/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="error-page">
+	<div class="container">
+		<div class="message"><p>I feel bad for you son ...</p>
+				<h1>404</h1>
+				<p>400 and 4 problems,<br>But a monsta ain't 1</p>
+				<a href="http://www.3dollarmonsters.com"><p>Back to a monsta's paradise</p></a>
+		</div>
+	</div>
+</body>
+</html>

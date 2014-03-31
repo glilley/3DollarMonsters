@@ -1,0 +1,708 @@
+@import "compass";
+@import "normalize";
+@import "typography";
+@import "breakpoints";
+@import "modal";
+@import "animation";
+@import "404";
+
+.container {
+	margin:0 auto;
+	width: 95%;
+	max-width: 60em;
+	position:relative;
+}
+.container-map{
+	position: relative;
+	margin: 0 auto;
+	width: 95%;
+	max-width: 70em;
+}
+.monster-counter {
+	position: fixed;
+	top: 0;
+	right:0;
+	z-index: 100;
+	width: 5.5em;
+	@include breakpoint (baby-bear){
+		width: 6em;
+	}
+	@include breakpoint (cousin-bear){
+		width: 7.5em;
+	}
+	@include breakpoint (papa-bear){
+		width: 8.5em;
+	}
+}
+body {
+	background-color: #efefef;
+}
+
+h1 {text-align: center; font-weight: 700; color: #fff; padding-top: 3em; margin: 0;}
+h2 {text-align: center; padding-top: 2em; margin-top: 0; margin-bottom: 0; font-weight: 500;}
+h3 {text-align: center; font-weight: 500;}
+
+h1.logo {
+	@include replace-text("logo-small.svg");
+	font-size: 3.5em;
+	background-size: 100%;
+	max-width: 6em;
+	min-width: 5em;
+	margin: 0 auto;
+	
+	@include breakpoint (sister-bear){
+		@include replace-text("logo.svg");
+		min-width: initial;
+		font-size: 10.5em;
+		padding-top: 0;
+		margin: 0;
+		background-size: 100%;
+
+	}
+}
+.main {
+	background-color: $green;
+}
+.how-it-works {
+	background-color: $green;
+	p {
+		color: #52735f; 
+		font-weight: 500;
+		font-size: 1.3em;
+	}
+	h2, h3 {
+		color: #fff;
+	}
+	h3 {
+	  font-size: 2em;
+	  margin-top: 0;
+		@include breakpoint (mama-bear){
+			font-size: 1.4em;
+	  }
+	  @include breakpoint (papa-bear){
+	  	font-size: 1.5em;
+	  }
+	}
+}
+.payment {
+	background-color:#98d6d9;
+	position: relative;
+	z-index: 1;
+	
+	h2 {
+		color: $darkBlue;
+		font-size: 2.2em;
+		padding-top: 2.5em;
+		@include breakpoint (baby-bear){
+			font-size: 2.7em;
+		}
+	}
+}
+.payment:before {
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: url(../images/hero-bottom-slime.svg) repeat-x;
+}
+.payment:after {
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: 7em;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.little-monster {
+	position: absolute;
+	z-index: 10;
+	background: transparent url(../images/little-monster.gif) top center no-repeat;
+	height: 50%;
+	width: 50%;
+	top: 25.3em;
+	left: -4.9em;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.nessy-1 {	
+		display: block;
+		position: absolute;
+		z-index: 9;
+		background: url(../images/nessy.svg) center 7em no-repeat;
+		height: 100%;
+		width: 100%;
+		visibility: hidden;
+}
+.map {
+	position: relative;
+	z-index: 1;
+	background-color: $orange;
+	height: 40em;
+	@include breakpoint (baby-bear) {
+		height: 42em;
+	}
+	h2 {
+		color: #874e35;
+		font-size: 1.6em;
+		margin-top: 1.5em;
+		font-size: 1.65em;
+		@include breakpoint(baby-bear){
+		font-size: 2.7em;
+		margin-top: initial;
+		}
+	}
+	background:  
+		url(../images/mountain-monsters.svg) center 14.6em repeat-x,
+		#F7A389;
+		z-index:10;
+}
+.monster-right{
+	display: none;
+	@include breakpoint(papa-bear){
+		position:absolute;
+		display: block;
+		z-index: 2;
+		background: transparent url(../images/map-monster-right.svg) top center no-repeat;
+		height: 15em;
+		width: 12em;
+		margin: 2em -2em 0 0;
+		top: 20em;
+		right: -1em;
+		visibility: hidden;
+	}
+}
+.road {
+	// @include breakpoint(papa-bear){
+		position:absolute;
+		display: block;
+		z-index: -1;
+		width: 65.525em;
+		height: 17em;
+		background: transparent url(../images/road.svg) center center no-repeat;
+		top: 21.7em;
+		left: -2em;
+	// }
+}
+.monster-left{
+	display: none;
+	@include breakpoint(papa-bear){
+	background:transparent url(../images/map-monster-left.svg) top center no-repeat;
+	width: 12.375em;
+	height: 14.0625em;
+	display: block;
+	position: absolute;
+	top: 19.5em;
+	left: -3em;
+	margin: 3em auto;
+	visibility: hidden;
+	}
+}
+// Cloud Animation ===========
+.cloud1 {
+	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	top: 6em;
+	width: 10em;
+	height: 4.625em;
+	-webkit-animation: cloud1 60s linear infinite;
+	-moz-animation: cloud1 60s linear infinite;
+	-ms-animation: cloud1 60s linear infinite;
+	animation: cloud1 60s infinte;
+}
+@-webkit-keyframes cloud1 { 
+ from {left: -12.5em;}
+ to {left: 87.5em;}
+}
+@-moz-keyframes cloud1 { 
+ from {left: -12.5em;}
+ to {left: 87.5em;}
+}
+@-ms-keyframes cloud1 { 
+ from {left: -12.5em;}
+ to {left: 87.5em;}
+}
+@keyframes cloud1 { 
+ from {left: -12.5em;}
+ to {left: 87.5em;}
+}
+.cloud1:before{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: -2em;;
+	left: 5.2em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
+}
+.cloud1:after{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: -1em;;
+	left: -6.8em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+}
+.cloud2 {
+	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
+	display:block;
+	position:absolute;
+	top: 10em;
+	width: 12em;
+	height: 6em;
+	-webkit-animation: cloud2 75s linear infinite;
+	-moz-animation: cloud2 75s linear infinite;
+	-ms-animation: cloud2 75s linear infinite;
+	animation: cloud2 75s infinte;
+}
+@-webkit-keyframes cloud2 { 
+  from {left: -31.25em;}
+  to {left: 87.5em;}
+}
+@-moz-keyframes cloud2 { 
+  from {left: -31.25em;}
+  to {left: 87.5em;}
+}
+@-ms-keyframes cloud2 { 
+  from {left: -31.25em;}
+  to {left: 87.5em;}
+}
+@keyframes cloud2 { 
+  from {left: -31.25em;}
+  to {left: 87.5em;}
+}
+.cloud2:before{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: 1em;
+	left: 4em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+}
+.cloud2:after{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: 3em;
+	left: -9em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+}
+.cloud3 {
+	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	top: 10em;
+	width: 15em;
+	height: 6em;
+	-webkit-animation: cloud3 90s linear infinite;
+	-moz-animation: cloud3 90s linear infinite;
+	-ms-animation: cloud3 90s linear infinite;
+	animation: cloud3 90s infinte;
+}
+@-webkit-keyframes cloud3 { 
+  from {left: -48.4375em;}
+  to {left: 87.5em;}
+}
+@-moz-keyframes cloud3 { 
+  from {left: -48.4375em;}
+  to {left: 87.5em;}
+}@-ms-keyframes cloud3 { 
+  from {left: -48.4375em;}
+  to {left: 87.5em;}
+}
+@keyframes cloud3 { 
+  from {left: -48.4375em;}
+  to {left: 87.5em;}
+}
+.cloud3:before{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: -4em;
+	left: 4.5em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+}
+.cloud3:after{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: 3em;
+	left: -9em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+}
+.cloud4 {
+	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	top: 6em;
+	width: 10em;
+	height: 4.625em;
+	-webkit-animation: cloud4 110s linear infinite;
+	-moz-animation: cloud4 110s linear infinite;
+	-ms-animation: cloud4 110s linear infinite;
+	animation: cloud4 110s infinte;
+}
+@-webkit-keyframes cloud4 { 
+ from {left: -62.5em;}
+ to {left: 87.5em;}
+}
+@-moz-keyframes cloud4 { 
+ from {left: -62.5em;}
+ to {left: 87.5em;}
+}
+@-ms-keyframes cloud4 { 
+ from {left: -62.5em;}
+ to {left: 87.5em;}
+}
+@keyframes cloud4 { 
+ from {left: -62.5em;}
+ to {left: 87.5em;}
+}
+.cloud4:before{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: -2em;;
+	left: 5.2em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
+}
+.cloud4:after{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top: -1em;;
+	left: -8.8em;
+	right: 0;
+	bottom: 0;
+	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+}
+// End Cloud Animation =========
+.map:before{
+	position:absolute;
+	content: "";
+	z-index: -1;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: transparent url(../images/color-bottom.svg) repeat-x;	
+}
+.steps {
+	@include clearfix;
+	position: relative;
+	text-align: center;
+	margin: 0;
+	padding: .5em 0 .5em 0;
+	div {
+		font-size: 2em;
+		color: #fff;
+		margin: .1em; 
+		display: block;
+		@include breakpoint(baby-bear){
+			margin: .2em 0em 0 0em;
+		}
+		@include breakpoint(mama-bear){
+			float: left; 
+			margin-top: 3.5em; 
+		}
+	}
+	li {
+		text-align: left;
+		padding: .2em;
+		margin: 0;
+		@include breakpoint(mama-bear){
+			width: 31%; 
+			float: left;
+			height: 20em;
+		}
+	}
+	p {
+		text-align: center;
+		margin: 0;
+		padding: .8em .4em .4em .4em;
+		@extend %body-font;
+	}
+	img {
+
+		display: block; 
+		margin: 0 auto;
+		width: 9.5em;
+		height: 9.5em;
+		@include breakpoint(mama-bear){
+			width: 9em;
+			height: 9em;
+		}
+	}
+	a {
+		font-weight: 700;
+		&:hover {
+			color: #fff;
+	}
+		&:active {
+			color: #F7A389;
+		}
+	}
+}
+// PAYPAL
+form {
+	position: relative;
+	z-index: 10;
+	margin: 0;
+	padding: 1em 0 0 0;
+	height: 14em;
+	display: block;
+	text-align: center;
+	@extend %body-font;
+}
+.shipping {
+	color: #fff;
+	display: block;	
+	text-align: center;
+	position: relative;
+	top: -2.5em;
+}
+table { 
+	margin: 1em auto;
+
+}
+input {
+	margin: .2em;
+	@include border-radius(0.2em);
+	padding: .5em;
+}
+.color {
+	border: .1em solid #fff;
+	background-color: #fff;
+	width: 16.5em;
+	text-align: center;
+	color: #777;
+	transition: border .8s;
+	&:hover{border: .1em solid shade(#88E8C1, 10%);}
+}
+.button {
+	color: #fff;
+	background-color: $darkBlue;
+	border-style: none;
+	border-bottom: .1em solid shade($darkBlue, 50%);
+	padding: 1em 3em;
+	font-size: 1.3em;
+	font-weight: 500;
+	transition: background-color .5s;
+}
+.button:hover {
+	background-color: shade($darkBlue, 15%);
+}
+.button:active{
+	border-color: shade($darkBlue, 5%);
+	background-color: shade($darkBlue, 5%);
+}
+.button:focus{outline:none;}
+// Nessy
+.nessy{
+	height: 9em;
+	background-color: #90CBCE;
+	position: relative;
+	z-index: -1;
+}
+iframe {
+	position: relative;
+	z-index: 20;
+	display:block;
+	margin: 3em auto 0 auto;
+	padding-bottom: 3em;
+	width: 100%;
+	@include breakpoint(mama-bear){
+		width: 45em;
+	}
+}
+.hands {
+	display: none;
+		
+		@include breakpoint(cousin-bear){
+			background: transparent url(../images/hands.svg) center 0 no-repeat;
+			position: absolute;
+			height: 100%;
+			display: block;
+		  z-index: -9;
+		  top: 17.13em;
+		  width: 6.9375em;
+		  height: 3.5em;
+		}
+}
+.left-hand {
+	background-position: 0 0;
+	left: 0;
+}
+.right-hand {
+  background-position: 0 -3.5em;
+  right: 0;
+}
+.cyclops {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 12.3em;
+	background: $green url(../images/cyclops.svg) center center no-repeat;
+	height: 6.6em;
+	width: 100%;
+	z-index: -11;
+	display: none;
+}
+footer {	
+	height: 22.04em;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: -1000;
+	background: $green url(../images/floating-monsters.gif) center 0.8em no-repeat;
+	overflow: hidden;
+	p {
+		@extend %title-font;
+		color: $green;
+		background-color: $darkGreen;
+		padding: 1.2em;
+		font-size: 1em;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 2;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		z-index: -10;
+		}
+			
+		a {
+			font-size: 1.1em;
+			&:hover {
+				color: #fff;
+			}
+			&:active{
+				color: lighten($darkGreen, 10%);
+			}
+		}
+	.container-footer{
+		display: block;
+		text-align: center;
+		position: relative;
+	  margin: 0 auto;
+	  width: 100%;
+	  @include breakpoint(mama-bear){
+	  	width: 44em;
+	  }
+	}
+	ul {
+		padding: 2.2em 0 0 0;
+		display: block;
+		margin: 0 auto;
+		@include breakpoint(mama-bear){
+			padding: 4em 0 0 0;
+		}
+	}
+	li {
+		padding: .25em;
+		@include breakpoint(mama-bear){
+			display: inline-block;
+			padding: 1em;
+		}
+		@extend %title-font;
+		font-size: 1.8em;
+		color: lighten($darkGreen, 5%);
+		font-weight: 400;
+		&:hover{
+			color: #fff;
+		}
+		&:active{
+			color: lighten($darkGreen, 10%);
+		}
+		transition: color .5s;
+	}
+}
+.sticky {
+	background: transparent url(../images/map-bottom.svg) repeat-x;
+	height: 1.1em;
+	margin-bottom: 21em;
+	overflow: hidden;
+}
+#map { 
+ position: absolute; 
+ margin: 0 auto;
+ top: 29em;
+ right: 0; 
+ left: 0;
+ bottom: 3em;
+ width: 100%;
+ z-index:20;
+ border: none;
+ @include breakpoint(cousin-bear){
+ 	top: 20em;
+ 	bottom: 6em;
+ }
+ 
+ @include breakpoint(mama-bear){
+	top: 14em;
+ 	max-width: 60em;
+ 	min-width: 48em;
+ 	width: 60%;
+	-webkit-border-radius: 1em;
+ 	border-radius: 1em;
+	}
+}
+// Map controls
+.leaflet-left .leaflet-control {
+ 	-webkit-border-radius: 1.25em;
+	 border-radius: 1.25em;
+	 border: none;
+	 background-color: #fff;
+	 opacity: 0.7;
+	 margin-left: 1.875em !important;
+
+	 @include breakpoint(baby-bear){
+	 	margin-left: 1.75em !important;
+		margin-top: 1.875em !important;
+	 }
+}
+// Map controls. Override hover color
+.leaflet-bar a:active, .leaflet-bar a:hover { 
+	background-color: initial !important;
+}
+// Leaflet Popup overrides
+.popup {
+	h2 {
+		font-size: 2em !important;
+		padding-top: .5em !important;
+		color: $green !important;
+	}
+	img {
+		max-width: 20em !important;
+	}
+}
+.leaflet-popup-content {
+	width: auto !important;
+}
+.leaflet-popup-content-wrapper {
+	-moz-border-radius: 1em !important;
+	-webkit-border-radius: 1em !important;
+	border-radius: 1em !important;
+}
