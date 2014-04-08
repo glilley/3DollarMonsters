@@ -1,6 +1,7 @@
 $(document).ready(function(){
+document.addEventListener("touchstart", function(){}, true);
 var map = L.mapbox.map('map', 'mizzmeister.h0an0mfi')
-    .setView([40, -74.50], 5); 
+    .setView([40, -92], 3); 
     map.scrollWheelZoom.disable();
     // map.touchZoom.disable();
     // if (map.tap) map.tap.disable();
@@ -13,11 +14,14 @@ var geoJson = [{
     "properties": {
         "title": "Do-Do Grapes",
         "image": "images/example.jpg",
+        "location": "Washington D.C.",
+        "brood": "images/icon-brood.svg",
+        "number": "1",
         "icon": {
             "iconUrl": "images/marker-icon-eye.svg",
             "iconSize": [40, 40],
             "iconAnchor": [20, 40],
-            "popupAnchor": [-68, -40],
+            "popupAnchor": [-38, -40],
             "className": "dot"
         }
     }
@@ -28,9 +32,10 @@ map.featureLayer.on('layeradd', function(e) {
         feature = marker.feature;
 
 // Create custom popup content
- var popupContent =  '<a target="_blank" class="popup" href="' + feature.properties.url + '">' +
-                     '   <h2>' + feature.properties.title + '</h2>' +
+ var popupContent =  '<a target="_blank" class="popup" href="' + feature.properties.image + '">' +
+                     '<h2>' + feature.properties.location + '</h2>' +
                      '<img src="' + feature.properties.image + '">' +
+                         '<p><img class="icon-brood" src="' + feature.properties.brood +'"/> <span>'+ feature.properties.number +'</span> &nbsp;' + feature.properties.title + '</p>'
                      '</a>';
 
 marker.bindPopup(popupContent,{

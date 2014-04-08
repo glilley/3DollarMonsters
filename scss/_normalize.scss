@@ -52,6 +52,7 @@ template {
     display: none;
 }
 
+
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(../js/boxsizing.htc);
  
@@ -59,6 +60,7 @@ template {
 .clearfix {
     @include clearfix;
 }
+
 
 /* ==========================================================================
    Base
@@ -74,6 +76,8 @@ html {
     font-family: sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
 }
 
 /**

@@ -24,6 +24,13 @@
 	right:0;
 	z-index: 100;
 	width: 5.5em;
+	transition: all .5s linear;
+	&:hover {
+		opacity: .75;
+	}
+	&:active {
+		opacity: .9;
+	}
 	@include breakpoint (baby-bear){
 		width: 6em;
 	}
@@ -34,6 +41,63 @@
 		width: 8.5em;
 	}
 }
+.tip {
+	// display: none;
+	margin: -.7em 0 0 auto;
+	@extend %title-font;
+	color: $darkGreen;
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	top: 0;
+	left: 0;
+	right: 5.5em;
+	width: 10em;
+	@include breakpoint(baby-bear) {
+		right: 7em;
+	}
+	@include breakpoint (papa-bear) {
+		margin: initial;
+		display: block;
+		top: 5em;
+		right: .3em;
+		left: initial;
+		width: 4.3em;
+		transition: all .2s linear;
+	}
+	img {
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		width: .8em;
+		float: right;
+		position: relative;
+		top: 1.15em;
+		// animation: none !important;
+		// -webkit-animation: none !important;
+		@include breakpoint(papa-bear) {
+			display: block;
+			width: initial;
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			margin: 1em auto 0 auto;
+			float: none;
+			poisition: static;
+			// animation: initial;
+			top: initial;
+
+			animation-name: bounce;
+			-webkit-animation-name: bounce;	
+			animation-duration: 1.6s;	
+			-webkit-animation-duration: 1.6s;
+			animation-iteration-count: 2;
+			-webkit-animation-iteration-count: 2;
+			animation-timing-function: ease;	
+			-webkit-animation-timing-function: ease;	
+			transform-origin: 50% 100%;
+			-webkit-transform-origin: 50% 100%; 
+		}
+	}
+}
 body {
 	background-color: #efefef;
 }
@@ -41,6 +105,7 @@ body {
 h1 {text-align: center; font-weight: 700; color: #fff; padding-top: 3em; margin: 0;}
 h2 {text-align: center; padding-top: 2em; margin-top: 0; margin-bottom: 0; font-weight: 500;}
 h3 {text-align: center; font-weight: 500;}
+
 
 h1.logo {
 	@include replace-text("logo-small.svg");
@@ -68,7 +133,7 @@ h1.logo {
 	p {
 		color: #52735f; 
 		font-weight: 500;
-		font-size: 1.3em;
+		font-size: 1.25em;
 	}
 	h2, h3 {
 		color: #fff;
@@ -714,6 +779,23 @@ footer {
 	}
 	img {
 		max-width: 20em !important;
+	}
+	p {
+		font-family: 'neoretrofillregular', sans-serif;
+		color: $green;
+		font-size: 1.7em !important;
+		text-align: center;
+		margin-bottom: 0 !important;
+	}
+	span {
+		color: $darkGreen;
+		font-size: 1em !important;
+		margin-left: -.2em !important;
+	}
+	.icon-brood {
+		display: inline-block !important;
+		vertical-align: top !important;
+		width: .7em !important;
 	}
 }
 .leaflet-popup-content {

@@ -22,6 +22,13 @@ $(window).scroll(function() {
 			}
 		});
 	});
+    $(document).scroll(function(){
+        var top=$(this).scrollTop();
+        if(top<150){
+            var dif=1-top/75;
+            $(".tip").css({opacity:dif});
+        }
+    });
 	$('a[href*=#goto]').click(function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') || location.hostname === this.hostname) {
         var target = $(this.hash);
@@ -34,4 +41,4 @@ $(window).scroll(function() {
         }
     }
 });
-
+	
