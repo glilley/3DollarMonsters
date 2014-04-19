@@ -1,6 +1,6 @@
 $(document).ready(function(){
 document.addEventListener("touchstart", function(){}, true);
-var map = L.mapbox.map('map', 'mizzmeister.h0an0mfi', {maxZoom: 10}).setView([40, -92], 3); 
+var map = L.mapbox.map('map', 'mizzmeister.h0an0mfi', {maxZoom: 12, minZoom: 3}).setView([40, -92], 3); 
     // map.scrollWheelZoom.disable();
     // map.touchZoom.disable();
     // if (map.tap) map.tap.disable();
@@ -415,6 +415,132 @@ var geoJson = [{
         "location": "San Leandro, CA",
         "brood": "images/icon-brood.svg",
         "number": "20",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+    "coordinates": [-77.04,39.292]
+    },
+    "properties": {
+        "title": "Orange",
+        "image": "monsters/2014_B_01_021_Orange.jpg",
+        "location": "Woodbine, MD",
+        "brood": "images/icon-brood.svg",
+        "number": "21",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+    "coordinates": [-77.06,39.35]
+    },
+    "properties": {
+        "title": "Green",
+        "image": "monsters/2014_B_01_022_Green.jpg",
+        "location": "Woodbine, MD",
+        "brood": "images/icon-brood.svg",
+        "number": "22",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+    "coordinates": [-78.88,36.010]
+    },
+    "properties": {
+        "title": "Blurple",
+        "image": "monsters/2014_B_01_023_Blurple.jpg",
+        "location": "Durham, NC",
+        "brood": "images/icon-brood.svg",
+        "number": "23",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+    "coordinates": [-118.096,33.816]
+    },
+    "properties": {
+        "title": "Jet Black Gargoyle",
+        "image": "monsters/2014_B_01_024_JetBlackGargoyle.jpg",
+        "location": "Long Beach, CA",
+        "brood": "images/icon-brood.svg",
+        "number": "24",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+    "coordinates": [-77.12,39.075]
+    },
+    "properties": {
+        "title": "Sunny Porcupine",
+        "image": "monsters/2014_B_01_026_SunnyPorcupine.jpg",
+        "location": "Rockville, MD",
+        "brood": "images/icon-brood.svg",
+        "number": "26",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+    "coordinates": [-118.11,33.8]
+    },
+    "properties": {
+        "title": "Asparagus Green Zombie",
+        "image": "monsters/2014_B_01_027_AsparagusGreenZombie.jpg",
+        "location": "Long Beach, CA",
+        "brood": "images/icon-brood.svg",
+        "number": "27",
         "icon": {
             "iconUrl": "images/marker-icon-eye.svg",
             "iconSize": [40, 40],
