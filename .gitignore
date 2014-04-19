@@ -1,4 +1,7 @@
 .sass-cache
+.codekit-cache
 config.codekit
 3DollarMonster.html
-
+js/*.js
+images/*.svg/.jpg/.png/.gif
+monsters/*.jpg

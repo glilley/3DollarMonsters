@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>3 Dollar Monsters | Handcrafted Monsters Mailed to You</title>
-	<meta name="description" content="Get your custom drawn and painted monster postcard mailed to you for $3. Each batch has a limited number and each monster is made according to your creative color combination.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Get a custom, handcrafted monster mailed to you for $3. Each batch has a limited number and each monster is made according to your creative color combination.">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" /> -->
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 	<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<script type="text/javascript">
@@ -15,26 +17,38 @@
 	<meta name="google-site-verification" content="3A31_Cdhs9q7aAQgX4NEz4SSczUNuMQ-OiKUU4deEXc" />
 </head>
 <body itemscope itemtype="http://schema.org/CreativeWork">
+	<!--[if lt IE 10]>
+            <p class="browsehappy">Ah! You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to keep the monsters happy.</p>
+   <![endif]-->
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-49772955-1', '3dollarmonsters.com');
   ga('send', 'pageview');
 	</script>
+		<!-- ClickTale-->
+	<script type="text/javascript">
+	var WRInitTime=(new Date()).getTime();
+	</script>
+	<!-- ClickTale end  -->
 	<a href="#origins" title="Read about the origins"><img src="images/monster-counter.svg" class="monster-counter"></a>
 	<a href="#origins"><p class="tip"><img src="images/arrow.svg" aria-hidden="true"><br>Read Origins</p></a>
 	<header class="main">
 		<div class="container">
-			<h1 class="logo bigEntrance" itemprop="name">3 Dollar Monsters</h1>
+			<h1 class="logo bigEntrance" itemprop="name" itemprop="img">3 Dollar Monsters</h1>
 		</div>
 	</header>
 	<section class="how-it-works">
 		<div class="container">
 			<ul class="steps">
-				<li><h3>Pick A Color</h3><div class="icons hatch icon-color"></div><p>Don’t be scared, they come in any color. Goblin Booger? Sure.</p><div class="icon"></div></li>
+				<li>
+					<h3>Pick A Color</h3>
+					<div class="icons hatch icon-color"><a href="#egg-1"></a></div>
+					<p>Don’t be scared, they come in any color. Goblin Booger? Sure.</p>
+					<div class="icon"></div>
+				</li>
 				<div>+</div>
 				<li><h3>Pay <span itemprop="price">3</span><meta itemprop="priceCurrency" content="USD"/> Dollars</h3><div class="icons hatch icon-money"></div><p>We use Paypal. It’s safe, secure and accepts all the big name plastic.</p><div class="icon"></div></li>
 				<div>=</div>
@@ -52,7 +66,7 @@
 				
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<table>
-				<tr><td><input type="hidden"  name="on0" value="Color" ></td></tr><tr><td><input class="color"type="text" placeholder="Ex: Blueberry Nessy" name="os0" maxlength="40"></td></tr>
+				<tr><td><input type="hidden" name="on0" value="Color" ></td></tr><tr><td><input class="color"type="text" placeholder="Ex: Blueberry Nessy" name="os0" maxlength="40"></td></tr>
 				</table>
 				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
 				<input class="button" type="submit"  src="" border="0" name="submit" value="Send My Monster">
@@ -72,21 +86,22 @@
 			<div class="road"></div>
 			<div class="monster-right animatedElement right" aria-hidden="true"></div>
 		</div>
-		<div id="map"></div>
+		<div id="map"><p class="posted"><span>20</span> Monsters Delivered</p></div></div>
 	</section>
 	<div class="sticky animatedElement" aria-hidden="true"></div>
 	<footer>
 		<div class="container-footer">
 			<ul>
 				<a href="#faq" alt="Frequently Asked Questions"><li>FAQ</li></a>
-				<a href="http://www.twitter.com/3dollarmonsters" alt="Follow us on Twitter for updates and to ask questions"><li>Twitter</li></a>
-				<a href="http://www.instagram.com/3dollarmonsters" alt"Share your Monster on Instagram"><li>Instagram</li></a>
+				<a href="http://www.twitter.com/3dollarmonsters" alt="Follow us on Twitter for updates and to ask questions" target="_blank"><li>Twitter</li></a>
+				<a href="http://www.instagram.com/3dollarmonsters" alt"Share your Monster on Instagram" target="_blank"><li>Instagram</li></a>
 			</ul>
 			<div class="hands left-hand" aria-hidden="true"></div>
 			<div class="cyclops animatedElement" aria-hidden="true"></div>
 			<div class="hands right-hand" aria-hidden="true"></div>
+			<div class="egg-2"><a href="#egg-2"></a></div>
 			</div>
-		<p>A project by <a href="http://www.mizzmeister.com" rel="author" itemprop="creator">Milo</a> &amp; <a href="http://www.gregllly.com" rel="author" itemprop="creator">Greg</a></p>
+		<p>A project by <a href="http://www.mizzmeister.com" rel="author" itemprop="creator" target="_blank">Milo</a> &amp; <a href="http://www.gregllly.com" rel="author" itemprop="creator" target="_blank">Greg</a></p>
 	</footer>
 	<!-- Example Modal Start -->
 	<section id="modal-example" class="semantic-content" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
@@ -95,7 +110,7 @@
 						<h2 id="modal-label">Example Postcard</h2>
 					</header>
 					<div class="modal-content list">
-						<img src="images/example.jpg" alt="Example of 3 Dollar Monster Postcard">
+						<img src="monsters/2014_B_01_011_BloodOrange.jpg" alt="Example of 3 Dollar Monster Postcard">
 						<p>Watercolor &amp; pen on postcard</p>
 					</div>
 				</div>
@@ -114,9 +129,9 @@
 						<h3>How many colors can I choose?</h3>
 						<p>Go Wild! Just remember, <a href="http://vimeo.com/27003856" target="_blank" alt="Don't Hug Me I'm Scared video - Vimeo link">green is not a creative color.</a></p>
 						<h3>Where are these monsters born?</h3>
-						<p>Unfortunately, we cannot disclose the hatching location, but rest assured, they are a product of the USA and deliverd via bald eagle.</p>
+						<p>Unfortunately, we cannot disclose the hatching location, but rest assured, they are a product of the USA and deliverd via US Postal Stork.</p>
 						<h3>How do you plot locations?</h3>
-						<p>We plot general vacinity (city level) based on your shipping address. <a href="#privacy-policy">Privacy policy.</a></p>
+						<p>We plot general vicinity (city level) based on your shipping address. <a href="#privacy-policy">Privacy policy.</a></p>
 						<h3>$3 dollars for a custom monster?</h3>
 						<p>Yep, pretty cool, huh? To be honest, we're trying to get them off our hands. These guys have quite the appetite...You can't even begin to imagine our grocery bill.</p>
 					</div>
@@ -138,7 +153,7 @@
 							<p>You can opt out of Google's use of cookies without affecting how you visit our site <a href="https://support.google.com/ads/answer/2662922?hl=en">here</a>. Alternatively, you can prevent Google Analytics data from being collected by downloading the Google Analytics Opt-out Browser Add-on <a href="https://tools.google.com/dlpage/gaoptout">here</a>.</p>
 							<h3>When you adopt a monster</h3>
 							<p>A marker will be placed on the "Recently Adopted" map in the general area of your city. There is no specific max-min range, it's a bit less complicated. You live at 123 Monster Way, Monster City, Monster State. We'll drop the city name into a geocoder which spits out a long/lat for the middle of that city and then we randomize the trailing numbers a bit to avoid overlaps.</p>
-							<p>We hope you'd like to receive updates about monster happenings. However, our <a href="http://www.twitter.com/3dollarmonsters">Twitter</a> will likely be a better and more reliable experience than annoying newsletters. That said, we'll notify you if we plan on starting up something more substantial with email addresses, in which case you'll have an opportunity to opt-out.</p>
+							<p>We hope you'd like to receive updates about monster happenings. However, our <a href="http://www.twitter.com/3dollarmonsters" target="_blank">Twitter</a> will likely be a better and more reliable experience than annoying newsletters. That said, we'll notify you if we plan on starting up something more substantial with email addresses, in which case you'll have an opportunity to opt-out.</p>
 					</div>
 				</div>
 				<a href="#!" class="modal-close" title="Click to close this modal" data-dismiss="modal">&times;</a>
@@ -155,15 +170,57 @@
 						<p>What we can tell you is this. We’ve stumbled upon a hefty batch of eggs. From what our team has gathered, these monsters hatch in broods &ndash; 100 eggs in each. We have no way of knowing what they’ll look like when they hatch, but we can determine their color. It’s all based on exposure to light and temperature, rather straightforward actually. If we want to make a monster blue, we simply place the egg in a dark enclosure. Level of temperature dictates how vibrant a color is. For a bright iridescent blue, we just crank up the heat.</p>
 						<p>Unfortunately, we have no control of any other feature of the monster. But this is the fun part...You never know what you’re going to get!</p>
 						<h3> <img src="images/icon-brood.svg" alt="numbered brood symbol"> 100 The First Brood</h3>
-						<p>After much careful and calculated testing, we’re finally ready to debut our first brood of 100 monsters for public adoption. All you have to do is choose a color for your new monster. Now, remember this isn’t the most thorough of science - we’re rather new to this field. But we’ve had rather promising results. We just ask that you don’t be too disappointed if your colors aren’t as imagined. Hopefully we can perfect our colorization process in the future.</p>
+					<p>After much careful and calculated testing, we’re finally ready to debut our first brood of 100 monsters for public adoption. All you have to do is choose a color for your new monster. Now, remember this isn’t the most thorough of science - we’re rather new to this field. But we’ve had rather promising results. We just ask that you don’t be too disappointed if your colors aren’t as imagined. Hopefully we can perfect our colorization process in the future.</p>
 						<p>We’re always eager for feedback. Or even just an update on how your newly adopted monster is doing. Tweet us <a href="http://www.twitter.com/3dollarmonsters" target="_blank">@3DollarMonsters</a>, we’d love to hear from you!</p>
 					</div>
 				</div>
 				<a href="#!" class="modal-close" title="Click to close this modal" data-dismiss="modal">&times;</a>
 	</section>
 	<!-- Modal End -->
+		<!-- Egg-1 Modal-->
+<section id="egg-1" class="semantic-content" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<div class="modal-inner">
+					<header>
+						<h2 id="modal-label">You Found Me!</h2>
+					</header>
+					<div class="modal-content list">
+						<img src="images/icon-brood-egg-1.svg" alt="" aria-hidden="true">
+						<p>Congratulations, you've won a free monster! This is egg 1 of 3 from our special edition Easter egg hunt. Just be the first to post the phrase &#8220;Rainbows make me smile, monsters make me scream!&#8221; on our <a href="http://www.instagram.com/3dollamonsters">Instagram</a> (a screenshot will do) or <a href="http://www.twitter.com/3dollarmonsters">Twitter</a> and we'll contact you for your color choice and stork drop zone (aka shipping location).</p>
+						<p>Let's share the fun. One special egg per adopter.</p>
+					</div>
+				</div>
+				<a href="#!" class="modal-close" title="Click to close this modal" data-dismiss="modal">&times;</a>
+	</section>
+	<!-- Egg-1 Modal End -->
+	<!-- Egg-2 Modal-->
+<section id="egg-2" class="semantic-content" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<div class="modal-inner">
+					<header>
+						<h2 id="modal-label">You Found Me!</h2>
+					</header>
+					<div class="modal-content list">
+						<img src="images/icon-brood-egg-2.svg" alt="" aria-hidden="true">
+						<p>Congratulations, you&#39;ve won a free monster! This is egg 2 of 3 from our special edition Easter egg hunt. Just be the first to post the phrase &#8220;I eat bunnies for breakfast!&#8221; on our <a href="http://www.instagram.com/3dollamonsters">Instagram</a> (a screenshot will do) or <a href="http://www.twitter.com/3dollarmonsters">Twitter</a> and we'll contact you for your color selection and stork drop zone (aka shipping location).</p>
+						<p>Let's share the fun. One special egg per adopter.</p>
+					</div>
+				</div>
+				<a href="#!" class="modal-close" title="Click to close this modal" data-dismiss="modal">&times;</a>
+	</section>
+	<!-- Egg-2 Modal End -->
+
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet'/>
 	<script type="text/javascript" src="js/min/main-ck.js"></script>
+	<!-- ClickTale Bottom part -->
+	<script type='text/javascript'>
+	// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+	// 
+	//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+	//
+	document.write(unescape("%3Cscript%20src='"+
+	(document.location.protocol=='https:'?
+	"https://cdnssl.clicktale.net/www07/ptc/7e024202-3568-4a3c-b92e-bc0c348a5986.js":
+	"http://cdn.clicktale.net/www07/ptc/7e024202-3568-4a3c-b92e-bc0c348a5986.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+	</script>
 </body>
 </html>
