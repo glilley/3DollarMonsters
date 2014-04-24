@@ -1,14 +1,15 @@
 $(document).ready(function(){
 document.addEventListener("touchstart", function(){}, true);
-var map = L.mapbox.map('map', 'mizzmeister.h0an0mfi', {maxZoom: 12, minZoom: 3}).setView([40, -92], 3); 
+var map = L.mapbox.map('map', 'mizzmeister.h0an0mfi', {maxZoom: 12, minZoom: 3}).setView([40, -92], 3);
     // map.scrollWheelZoom.disable();
     // map.touchZoom.disable();
     // if (map.tap) map.tap.disable();
+
 var geoJson = [{
     "type": "Feature",
     "geometry": {
         "type": "Point",
-        "coordinates": [-118.11,33.80]
+    "coordinates": [-118.11,33.81]
     },
     "properties": {
         "title": "Banana Brains Yellow",
@@ -155,7 +156,7 @@ var geoJson = [{
     "type": "Feature",
     "geometry": {
         "type": "Point",
-    "coordinates": [-118.09,33.75]
+    "coordinates": [-118.06,33.73]
     },
     "properties": {
         "title": "Blue Waffle",
@@ -512,6 +513,27 @@ var geoJson = [{
     "type": "Feature",
     "geometry": {
         "type": "Point",
+    "coordinates": [-76.987045,38.91209]
+    },
+    "properties": {
+        "title": "Green Wedding",
+        "image": "monsters/2014_B_01_025_GreenWedding.jpg",
+        "location": "Washington, D.C.",
+        "brood": "images/icon-brood.svg",
+        "number": "25",
+        "icon": {
+            "iconUrl": "images/marker-icon-eye.svg",
+            "iconSize": [40, 40],
+            "iconAnchor": [20, 40],
+            "popupAnchor": [-68, -55],
+            "className": "dot"
+        }
+    }
+},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
     "coordinates": [-77.12,39.075]
     },
     "properties": {
@@ -550,27 +572,27 @@ var geoJson = [{
         }
     }
 },
-{
-    "type": "Feature",
-    "geometry": {
-        "type": "Point",
-    "coordinates": [-109.3667,-27.1167]
-    },
-    "properties": {
-        "title": "You're dedicated! Be the first to post 'Happy Rapa Nui!' on our Instagram or Twitter to get your free monster!",
-        "image": "images/icon-brood-egg-3.svg",
-        "location": "Easter Island",
-        // "brood": "images/icon-brood.svg",
-        "number": "3",
-        "icon": {
-            "iconUrl": "images/marker-icon-egg.svg",
-            "iconSize": [10, 10],
-            "iconAnchor": [10, 20],
-            "popupAnchor": [-68, -55],
-            "className": "easter"
-        }
-    }
-}
+// {
+//     "type": "Feature",
+//     "geometry": {
+//         "type": "Point",
+//     "coordinates": [-109.3667,-27.1167]
+//     },
+//     "properties": {
+//         "title": "You're dedicated! Be the first to post 'Happy Rapa Nui!' on our Facebook to get your free monster!",
+//         "image": "images/icon-brood-egg-3.svg",
+//         "location": "Easter Island",
+//         // "brood": "images/icon-brood.svg",
+//         "number": "3",
+//         "icon": {
+//             "iconUrl": "images/marker-icon-egg.svg",
+//             "iconSize": [10, 10],
+//             "iconAnchor": [10, 20],
+//             "popupAnchor": [-68, -55],
+//             "className": "easter"
+//         }
+//     }
+// }
 ];
 // Set a custom icon on each marker based on feature properties
 map.featureLayer.on('layeradd', function(e) {

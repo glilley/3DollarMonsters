@@ -5,7 +5,7 @@
 @import "modal";
 @import "animation";
 @import "404";
-@import "retina";
+// @import "retina";
 
 .browsehappy {
 	text-align: center;
@@ -298,197 +298,197 @@ h1.logo {
 	}
 }
 // Cloud Animation ===========
-.cloud1 {
-	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
-	display: block;
-	position: absolute;
-	top: 6em;
-	width: 10em;
-	height: 4.625em;
-	-webkit-animation: cloud1 60s linear infinite;
-	-moz-animation: cloud1 60s linear infinite;
-	-ms-animation: cloud1 60s linear infinite;
-	animation: cloud1 60s infinte;
-}
-@-webkit-keyframes cloud1 { 
- from {-webkit-transform: translateX(-12.5em);}
- to {-webkit-transform: translateX(87.5em);}
-}
-@-moz-keyframes cloud1 { 
- from {-moz-transform: translateX(-12.5em);}
- to {-moz-transform: translateX(87.5em);}
-}
-@-ms-keyframes cloud1 { 
- from {-ms-transform: translateX(-12.5em);}
- to {-ms-transform: translateX(87.5em);}
-}
-@keyframes cloud1 { 
- from {transform: translateX(-12.5em);}
- to {transform: translateX(87.5em);}
-}
-.cloud1:before{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: -2em;;
-	left: 5.2em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
-}
-.cloud1:after{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: -1em;;
-	left: -6.8em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
-}
-.cloud2 {
-	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
-	display:block;
-	position:absolute;
-	top: 10em;
-	width: 12em;
-	height: 6em;
-	-webkit-animation: cloud2 75s linear infinite;
-	-moz-animation: cloud2 75s linear infinite;
-	-ms-animation: cloud2 75s linear infinite;
-	animation: cloud2 75s infinte;
-}
-@-webkit-keyframes cloud2 { 
-  from {-webkit-transform: translateX(-31.25em);}
-  to {-webkit-transform: translateX(87.5em);}
-}
-@-moz-keyframes cloud2 { 
-  from {-moz-transform: translateX(-31.25em);}
-  to {-moz-transform: translateX(87.5em);}
-}
-@-ms-keyframes cloud2 { 
-  from {-ms-transform: translateX(-31.25em);}
-  to {-ms-transform: translateX(87.5em);}
-}
-@keyframes cloud2 { 
-  from {transform: translateX(-31.25em);}
-  to {transform: translateX(87.5em);}
-}
-.cloud2:before{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: 1em;
-	left: 4em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
-}
-.cloud2:after{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: 3em;
-	left: -9em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
-}
-.cloud3 {
-	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
-	display: block;
-	position: absolute;
-	top: 10em;
-	width: 15em;
-	height: 6em;
-	-webkit-animation: cloud3 90s linear infinite;
-	-moz-animation: cloud3 90s linear infinite;
-	-ms-animation: cloud3 90s linear infinite;
-	animation: cloud3 90s infinte;
-}
-@-webkit-keyframes cloud3 { 
-  from {-webkit-transform: translateX(-48.4375em);}
-  to {-webkit-transform: translateX(87.5em);}
-}
-@-moz-keyframes cloud3 { 
-  from {-moz-transform: translateX(-48.4375em);}
-  to {-moz-transform: translateX(87.5em);}
-}@-ms-keyframes cloud3 { 
-  from {-ms-transform: translateX(-48.4375em);}
-  to {-ms-transform: translateX(87.5em);}
-}
-@keyframes cloud3 { 
-  from {transform: translateX(-48.4375em);}
-  to {translate:transform (87.5em);}
-}
-.cloud3:before{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: -4em;
-	left: 4.5em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
-}
-.cloud3:after{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: 3em;
-	left: -9em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
-}
-.cloud4 {
-	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
-	display: block;
-	position: absolute;
-	top: 6em;
-	width: 10em;
-	height: 4.625em;
-	-webkit-animation: cloud4 110s linear infinite;
-	-moz-animation: cloud4 110s linear infinite;
-	-ms-animation: cloud4 110s linear infinite;
-	animation: cloud4 110s infinte;
-}
-@-webkit-keyframes cloud4 { 
- from {-webkit-transform: translateX(-62.5em);}
- to {-webkit-transform: translateX(87.5em);}
-}
-@-moz-keyframes cloud4 { 
- from {-moz-transform: translateX(-62.5em);}
- to {-moz-transform: translateX(87.5e-moz-m);}
-}
-@-ms-keyframes cloud4 { 
- from {-ms-transform: translateX(-62.5em);}
- to {-ms-transform: translateX(87.5em);}
-}
-@keyframes cloud4 { 
- from {transform: translateX(-62.5em);}
- to {transform: translateX(87.5em);}
-}
-.cloud4:before{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: -2em;;
-	left: 5.2em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
-}
-.cloud4:after{
-	position:absolute;
-	content: "";
-	z-index: -1;
-	top: -1em;;
-	left: -8.8em;
-	right: 0;
-	bottom: 0;
-	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
-}
+// .cloud1 {
+// 	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+// 	display: block;
+// 	position: absolute;
+// 	top: 6em;
+// 	width: 10em;
+// 	height: 4.625em;
+// 	-webkit-animation: cloud1 60s linear infinite;
+// 	-moz-animation: cloud1 60s linear infinite;
+// 	-ms-animation: cloud1 60s linear infinite;
+// 	animation: cloud1 60s infinte;
+// }
+// @-webkit-keyframes cloud1 { 
+//  from {-webkit-transform: translateX(-12.5em);}
+//  to {-webkit-transform: translateX(87.5em);}
+// }
+// @-moz-keyframes cloud1 { 
+//  from {-moz-transform: translateX(-12.5em);}
+//  to {-moz-transform: translateX(87.5em);}
+// }
+// @-ms-keyframes cloud1 { 
+//  from {-ms-transform: translateX(-12.5em);}
+//  to {-ms-transform: translateX(87.5em);}
+// }
+// @keyframes cloud1 { 
+//  from {transform: translateX(-12.5em);}
+//  to {transform: translateX(87.5em);}
+// }
+// .cloud1:before{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: -2em;;
+// 	left: 5.2em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
+// }
+// .cloud1:after{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: -1em;;
+// 	left: -6.8em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+// }
+// .cloud2 {
+// 	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
+// 	display:block;
+// 	position:absolute;
+// 	top: 10em;
+// 	width: 12em;
+// 	height: 6em;
+// 	-webkit-animation: cloud2 75s linear infinite;
+// 	-moz-animation: cloud2 75s linear infinite;
+// 	-ms-animation: cloud2 75s linear infinite;
+// 	animation: cloud2 75s infinte;
+// }
+// @-webkit-keyframes cloud2 { 
+//   from {-webkit-transform: translateX(-31.25em);}
+//   to {-webkit-transform: translateX(87.5em);}
+// }
+// @-moz-keyframes cloud2 { 
+//   from {-moz-transform: translateX(-31.25em);}
+//   to {-moz-transform: translateX(87.5em);}
+// }
+// @-ms-keyframes cloud2 { 
+//   from {-ms-transform: translateX(-31.25em);}
+//   to {-ms-transform: translateX(87.5em);}
+// }
+// @keyframes cloud2 { 
+//   from {transform: translateX(-31.25em);}
+//   to {transform: translateX(87.5em);}
+// }
+// .cloud2:before{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: 1em;
+// 	left: 4em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+// }
+// .cloud2:after{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: 3em;
+// 	left: -9em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+// }
+// .cloud3 {
+// 	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+// 	display: block;
+// 	position: absolute;
+// 	top: 10em;
+// 	width: 15em;
+// 	height: 6em;
+// 	-webkit-animation: cloud3 90s linear infinite;
+// 	-moz-animation: cloud3 90s linear infinite;
+// 	-ms-animation: cloud3 90s linear infinite;
+// 	animation: cloud3 90s infinte;
+// }
+// @-webkit-keyframes cloud3 { 
+//   from {-webkit-transform: translateX(-48.4375em);}
+//   to {-webkit-transform: translateX(87.5em);}
+// }
+// @-moz-keyframes cloud3 { 
+//   from {-moz-transform: translateX(-48.4375em);}
+//   to {-moz-transform: translateX(87.5em);}
+// }@-ms-keyframes cloud3 { 
+//   from {-ms-transform: translateX(-48.4375em);}
+//   to {-ms-transform: translateX(87.5em);}
+// }
+// @keyframes cloud3 { 
+//   from {transform: translateX(-48.4375em);}
+//   to {translate:transform (87.5em);}
+// }
+// .cloud3:before{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: -4em;
+// 	left: 4.5em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+// }
+// .cloud3:after{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: 3em;
+// 	left: -9em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+// }
+// .cloud4 {
+// 	background: transparent url(../images/cloud1.svg) 0 0 no-repeat;
+// 	display: block;
+// 	position: absolute;
+// 	top: 6em;
+// 	width: 10em;
+// 	height: 4.625em;
+// 	-webkit-animation: cloud4 110s linear infinite;
+// 	-moz-animation: cloud4 110s linear infinite;
+// 	-ms-animation: cloud4 110s linear infinite;
+// 	animation: cloud4 110s infinte;
+// }
+// @-webkit-keyframes cloud4 { 
+//  from {-webkit-transform: translateX(-62.5em);}
+//  to {-webkit-transform: translateX(87.5em);}
+// }
+// @-moz-keyframes cloud4 { 
+//  from {-moz-transform: translateX(-62.5em);}
+//  to {-moz-transform: translateX(87.5e-moz-m);}
+// }
+// @-ms-keyframes cloud4 { 
+//  from {-ms-transform: translateX(-62.5em);}
+//  to {-ms-transform: translateX(87.5em);}
+// }
+// @keyframes cloud4 { 
+//  from {transform: translateX(-62.5em);}
+//  to {transform: translateX(87.5em);}
+// }
+// .cloud4:before{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: -2em;;
+// 	left: 5.2em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud2.svg) 0 0 no-repeat;
+// }
+// .cloud4:after{
+// 	position:absolute;
+// 	content: "";
+// 	z-index: -1;
+// 	top: -1em;;
+// 	left: -8.8em;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: transparent url(../images/cloud3.svg) 0 0 no-repeat;
+// }
 // End Cloud Animation =========
 .map:before{
 	position:absolute;
@@ -645,17 +645,17 @@ input {
 	position: relative;
 	z-index: -1;
 }
-iframe {
-	position: relative;
-	z-index: 20;
-	display:block;
-	margin: 3em auto 0 auto;
-	padding-bottom: 3em;
-	width: 100%;
-	@include breakpoint(mama-bear){
-		width: 45em;
-	}
-}
+// iframe {
+// 	position: relative;
+// 	z-index: 20;
+// 	display:block;
+// 	margin: 3em auto 0 auto;
+// 	padding-bottom: 3em;
+// 	width: 100%;
+// 	@include breakpoint(mama-bear){
+// 		width: 45em;
+// 	}
+// }
 .hands {
 	display: none;
 		
@@ -835,9 +835,6 @@ footer {
  			font-weight: 700;
  		}
  	}
-
- 
-
  @include breakpoint(mama-bear){
 	top: 14em;
  	max-width: 60em;
@@ -903,7 +900,6 @@ footer {
 		font-size: .9em !important;
 		margin-left: .15em !important;
 		font-weight: 400 !important;
-
 	}
 	.icon-brood {
 		width: .55em !important;
@@ -919,38 +915,34 @@ footer {
 	border-radius: 1em !important;
 }
 
-
 .leaflet-popup-tip-container {
 	display: none !important;
 }
-.easter {
+.easter{
 	div {
 		display: block !important;
 	}
 	p {
-		width: 10em;
+		width: 10em !important;
 		text-align: left !important;
 		font-family: 'Dosis', sans-serif; font-weight: 500;
-		padding: .1em;
-		display: block
+		padding: .1em !important;
+		display: block !important;
 	}
 	span {
 		font-family: 'neoretrofillregular', sans-serif; font-weight: 500;
-		width: 100%;
+		width: 100% !important;
 		display: block !important;
-		display: none;
+		// display: none
 	}
 	img {
 			display: block;
 			margin: 0 auto;
 		}
 	.icon-brood {
-		display: none;
+		display: none !important;
 	}
 }
-
-
-
 
 .info {
     background: #fff;
@@ -1038,10 +1030,10 @@ footer {
     z-index: 1000;
     }
     .info .item {
-      display:block;
-      border-bottom:1px solid #eee;
-      padding:10px;
-      text-decoration:none;
+      display: block;
+      border-bottom: 1px solid #eee;
+      padding: 10px;
+      text-decoration: none;
       }
       .info .item small { color:#888; }
       .info .item:hover,
